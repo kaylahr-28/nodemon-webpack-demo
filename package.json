@@ -6,13 +6,17 @@
   "scripts": {
     "start": "node ./src/server.js",
     "pretest": "eslint ./src --fix",
-    "test": "echo \"Tests complete\""
+    "test": "echo \"Tests complete\"",
+    "nodemon": "nodemon -e js,html,css --watch ./src --watch ./hosted ./src/server.js",
+    "buildBundle": "webpack",
+    "watchBundle": "webpack watch"
   },
-  "author": "Austin Willoughby",
+  "author": "kr",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.0.0",
-    "globals": "^17.3.0"
+    "globals": "^17.3.0",
+    "nodemon": "^3.1.14"
   }
 }
